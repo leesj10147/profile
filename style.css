@@ -1,0 +1,13 @@
+.content-center
+{
+    float: none;
+    margin:0 auto;
+}
+.weired-list
+{
+    list-style-type: georgian;
+}
+.bg-grad
+{
+    background: linear-gradient(to right, gray, red);
+}

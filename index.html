@@ -1,54 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>LEESJ's Profile page</title>
-  </head>
-  <body>
-    <h1>welcome to my profile page!</h1>
-    <div>
+</head>
+
+<body>
+
+    <div class = "w-50 row content-center">
+        <h1>welcome to my profile page!</h1>
         <div>
             <h2>
                 who am I?
             </h2>
         </div>
+
         <div>
-            <h3>학력</h3>
-            <ul>
-                <li>선린인터넷고 졸업</li>
-                <li>성균관대학교 소프트웨어학과 재학중</li>
-            </ul>
-        </div>
-        <div>
-            <p>
+            <p class="border border-secondary p-1">
                 안녕하세요?! 저는 성균관대학교 소프트웨어학과를 다니는 <strong>이승재</strong>라고 합니다.
                 저의 지향점은 도전적이고 창의적이면서도 이해하기 쉬운 소스코드를 작성하는 것입니다.
                 복잡한 아이디어를 소스코드로 명확하고 간단하게 전달할 수 있다고 믿습니다.
                 제가 생각하는 좋은 소스코드는 다음 목록들을 만족해야하죠!
             </p>
-            <ul>
-                <li>simple</li>
-                <li>trivial</li>
-                <li>easy</li>
-                <li>precise</li>
-                <li>regularity</li>
+            <ul class="weired-list">
+                <li class="text-danger">simple</li>
+                <li class="text-danger">trivial</li>
+                <li class="text-danger">easy</li>
+                <li class="text-danger">precise</li>
+                <li class="text-danger">regularity</li>
             </ul>
         </div>
-    </div>
-    <div>
-        <p>
-        저의 주요한 관심사는 CP(competitive programming)와 PS(problem solving) 입니다!
-        도전적이고 어려운 문제의 창의적인 솔루션을 찾는것이 저의 목표이죠.
-        
-        다음 계정들에서 저의 CP활동을 보실 수 있습니다!
+        <p class="border border-secondary p-1">
+            저의 주요한 관심사는 CP(competitive programming)와 PS(problem solving) 입니다!
+            도전적이고 어려운 문제의 창의적인 솔루션을 찾는것이 저의 목표이죠.
+
+            다음 계정들에서 저의 CP활동을 보실 수 있습니다!
         </p>
-        <table>
+        <table class="table table-striped table-success">
             <tr>
                 <th><a href="https://www.acmicpc.net/">BOJ</a></th>
                 <th><a href="https://codeforces.com/">Codeforces</a></th>
@@ -60,39 +56,52 @@
                 <td><a href="https://github.com/leesj10147">leesj</a></td>
             </tr>
         </table>
-        <p>
+        <p class="border border-secondary p-1">
             이밖에도 저의 화려한?! 실적들은 다음과 같습니다!
         </p>
-        <ul>
-            <li>koi예선 일반부 은상</li>
-            <li>SCPC2020 5등상</li>
-            <li>Shake!2020 2등상</li>
-            <li>현대mobis코딩대회 5등상</li>
-        </ul>
-        <ul>
-            <li>성균관대 솦밤 프로그래밍대회 문제 출제</li>
-            <li>Shake!2021 문제 출제</li>
-        </ul>
-        <ul>
-            <li>npc 부회장</li>
-        </ul>
-        <ul>
-
-        </ul>
-    </div>
-    <div>
+        <div>
+            <h4 class="fst-italic shadow p-1 bg-body rounded bg-grad">수상 목록</h4>
+            <ul class="list-group fw-bold">
+                <li class="list-group-item bg-dark text-white">koi예선 일반부 은상</li>
+                <li class="list-group-item bg-dark text-white">SCPC2020 5등상</li>
+                <li class="list-group-item bg-dark text-white">Shake!2020 2등상</li>
+                <li class="list-group-item bg-dark text-white">현대mobis코딩대회 5등상</li>
+            </ul>
+            <h4 class = "fst-italic shadow p-1 bg-body rounded bg-grad mt-4">출제 목록</h4>
+            <ul class="list-group fw-bold">
+                <li class="list-group-item bg-dark text-white">성균관대 솦밤 프로그래밍대회 문제 출제중</li>
+                <li class="list-group-item bg-dark text-white">Shake!2021 문제 출제중</li>
+            </ul>
+            <h4 class = "fst-italic shadow p-1 bg-body rounded bg-grad mt-4">동아리 활동</h4>
+            <ul class = "list-group fw-bold">
+                <li class="list-group-item bg-dark text-white">선린인터넷고 wayout회장</li>
+                <li class="list-group-item bg-dark text-white">성균관대npc 부회장</li>
+            </ul>
+        </div>
+        <div class="mt-3">
+            <h3>학력</h3>
+            <ul>
+                <li>선린인터넷고 졸업</li>
+                <li>성균관대학교 소프트웨어학과 재학중</li>
+            </ul>
+        </div>
         <p><em>contact</em><br>fkddl1436@naver.com</p>
+        <img src="photo.png" />
+        
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
